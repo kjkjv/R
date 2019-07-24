@@ -1,0 +1,12 @@
+library(foreign)
+library(dplyr)
+library(ggplot2)
+library(readxl)
+
+raw_welfare<-read.spss(file="../easy_R/Koweps_etc/데이터/Koweps_hpc10_2015_beta1.sav",to.data.frame=T)
+
+welfare <-raw_welfare
+
+table(welfare$h1001_11)
+welfare<-rename(welfart,
+)
